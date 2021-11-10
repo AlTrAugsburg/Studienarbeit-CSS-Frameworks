@@ -33,3 +33,7 @@ seines Unternehmens:
   Template handelt, damit kein Impressum für jedes Szenario benötigt wird
 * Es wird nur eine Sprache (Deutsch) für die Seite umgesetzt
 * Es werden keine SEO umgesetzt, da es hierfür nicht benötigt wird
+
+## Seiten
+
+* [Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
