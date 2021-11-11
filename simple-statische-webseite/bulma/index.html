@@ -8,7 +8,7 @@
     <!--Einbinden des Bulma CSS-Frameworks-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   </head>
-  <body>
+  <body style="max-width: 100vw;">
     <nav class="navbar is-inline is-flex-touch is-fixed-top" style="background-color: #366602;">
       <div class="navbar-brand is-justify-content-space-between">
         <a class="navbar-item">
@@ -76,66 +76,73 @@
         </div>
       </div>
     </section>
-    <div class="has-background-light">
-      <div class="container content" style="margin-top: 5vh; margin-bottom: 2vh;">
-        <div class="columns">
-          <div class="column is-8">
-            <div class="box content">
-              Im Chinesischen gibt es folgendes Sprichwort:<br>
-              <b style="padding: 2vh;">
-                "Ein Bad erfrischt den Körper, eine Tasse Tee den Geist."
-              </b><br>
-              Mit unseren Teesorten möchten wir dies ermöglichen. Von
-              Earl Grey bis Früchtetee, wir haben gefühlt alles. Und mit
-              unseren Eigenkreationen, haben wir immer was für die Experementierfreudigen.
-            </div>
+    <div class="container content has-background-light" style="padding-top: 5vh; padding-bottom: 2vh;">
+      <div class="columns">
+        <div class="column is-8">
+          <div class="box content">
+            Im Chinesischen gibt es folgendes Sprichwort:<br>
+            <p style="padding-top: 2vh; padding-left: 2vh;">
+              <b>"Ein Bad erfrischt den Körper, eine Tasse Tee den Geist."</b>
+            </p>
+            Mit unseren Teesorten möchten wir Ihnen dies ermöglichen.<br>
+            Von Earl Grey bis Früchtetee, wir haben gefühlt alles. Und mit
+            unseren Eigenkreationen, haben wir immer was für die Experementierfreudigen.
+            <figure class="image is-hidden-desktop">
+              <img src="images/buchUndTee.png" alt="Placeholder image">
+            </figure>
           </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="images/buchUndTee.png" alt="Placeholder image">
-                </figure>
-              </div>
+        </div>
+        <div class="column is-4 is-hidden-touch">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="images/buchUndTee.png" alt="Placeholder image">
+              </figure>
             </div>
           </div>
         </div>
-        <div class="columns">
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="images/teeErnte.png" alt="Placeholder image">
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="column is-8">
-            <div class="box content">
-              Aber damit man seinen Tee richtig genießen kann, geben wir unser Bestes
-              um auf faire Anbauweise und Verarbeitung. So kann man ohne schlechtes
-              Gewissen an seiner Tasse nippen und sich sogar denken, dass man was
-              Gutes getan hat.
+      </div>
+      <div class="columns">
+        <div class="column is-4 is-hidden-touch">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="images/teeErnte.png" alt="Placeholder image">
+              </figure>
             </div>
           </div>
         </div>
-        <div class="columns">
-          <div class="column is-8">
-            <div class="box content">
-              Unsere Mitarbeiter im Laden sind gerne für Sie da. Wir helfen Ihnen
-              Ihre neue Lieblinssorte zu finden oder das perfekte Geschenk. Und mit
-              einem unserer Geschenkkörbe kann man absolut nichts falsch machen.
-              Auf Anfrage mischen wir auch Teesorten für Sie und unsere Hauskreationen
-              bringen Sie durch jede Saison.
-            </div>
+        <div class="column is-8">
+          <div class="box content">
+            Aber damit man seinen Tee richtig genießen kann, geben wir unser Bestes
+            um auf faire Anbauweise und Verarbeitung. So kann man ohne schlechtes
+            Gewissen an seiner Tasse nippen und sich sogar denken, dass man was
+            Gutes getan hat.
+            <figure class="image is-hidden-desktop">
+              <img src="images/teeErnte.png" alt="Placeholder image">
+            </figure>
           </div>
-          <div class="column is-4">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image">
-                  <img src="images/mitarbeiterKasse.png" alt="Placeholder image">
-                </figure>
-              </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-8">
+          <div class="box content">
+            Unsere Mitarbeiter im Laden sind gerne für Sie da. Wir helfen Ihnen
+            Ihre neue Lieblinssorte zu finden oder das perfekte Geschenk.<br>
+            Und mit einem unserer Geschenkkörbe kann man absolut nichts falsch machen.<br>
+            Auf Anfrage mischen wir auch Teesorten für Sie und unsere Hauskreationen
+            bringen Sie durch jede Saison.
+            <figure class="image is-hidden-desktop">
+              <img src="images/mitarbeiterKasse.png" alt="Placeholder image">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-4 is-hidden-touch">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="images/mitarbeiterKasse.png" alt="Placeholder image">
+              </figure>
             </div>
           </div>
         </div>
