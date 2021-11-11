@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   </head>
   <body>
-    <nav class="navbar is-fixed-top" style="background-color: #167003;">
+    <nav class="navbar is-inline is-flex-touch is-fixed-top" style="background-color: #167003;">
       <div class="navbar-brand is-justify-content-space-between">
         <a class="navbar-item">
           <img src="images/teaNerdLogo.svg" alt="Logo">
@@ -24,16 +24,17 @@
         </span>
       </div>
     </nav>
-    <!--Für Nicht Mobilgeräte-->
-    <section class="hero is-large is-hidden-touch"
+    <!--Für Nicht Mobilgeräte deprecated
+    <section class="hero is-fullheight is-hidden"
         style="background: url('images/teaNerdHeroLarge.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;">
 
-      <!-- Hero content: will be in the middle -->
+      <!- Hero content: will be in the middle ->
       <div class="hero-body">
         <div class="is-centered">
+          <img class="image is-128x128" src="images/teaNerdLogo.svg" alt="Großes Logo">
           <div class="box container has-text-centered"
               style="width:50vw; background-color: #ffffffA0">
             <p class="title">
@@ -45,23 +46,28 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!--Für Mobile Nutzer (Smartphone + Tablet)-->
-    <section class="hero is-fullheight is-hidden-desktop"
+    <section class="hero is-fullheight"
         style="background: url('images/teaNerdHeroMedium.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;">
       <div class="hero-body">
         <div class="is-flex is-flex-direction-row is-justify-content-center" style="width: 100vw;">
-          <div class="box has-text-centered" style="background-color: #ffffffA0">
-            <p class="title">
-              Tea Nerd
-            </p>
-            <p class="subtitle">
-              Der Teeladen ist Musterdorf
-            </p>
+          <div class="is-flex is-flex-direction-column">
+            <div class="is-flex is-flex-direction-row is-justify-content-center">
+              <img class="image is-128x128 is-centered" src="images/teaNerdLogo.svg" alt="Großes Logo">
+            </div>
+            <div class="box has-text-centered" style="background-color: #ffffffA0">
+              <p class="title">
+                Tea Nerd
+              </p>
+              <p class="subtitle">
+                Der Teeladen ist Musterdorf
+              </p>
+            </div>
           </div>
         </div>
       </div>
