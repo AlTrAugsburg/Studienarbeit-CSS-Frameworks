@@ -19,8 +19,8 @@ seines Unternehmens:
 
 * Es soll auch auf dem Smartphone oder anderen kleinen Endgeräten gut aussehen
 * Die Firmenfarben im Logo sollen verwendet werden und die Seite soll dem Farbschema folgen
-* Es soll ein großes Herobild geben, auf dem Mobilgerät mit 100vh, auf dem PC
-  mit zwischen 60-75vh
+* Es soll ein großes Herobild geben, welches den ganzen Bildschirm füllen soll
+* Über dem Herobild soll das Logo mit dem Firmennamen und -slogan dargestellt werden
 * Es soll eine kleine Tabelle mit den beliebtesten Teesorten geben
 * Ein kleiner Abschnitt, mit Infos zu dem Unternehmen
 * Ein simples Kontaktformuler zur Kontaktaufnahme

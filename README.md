@@ -11,6 +11,9 @@ Infos zu den einzelnen Szenarien findet sich in einem README.md in den Szenarien
 
 Hier kommen später Links zu den Seiten, welche mit GitHub Sites gepublished werden...
 
+* [Simple, statische Webseite mit Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
+
+
 Die Lizenz für die verwendeten Frameworks befindet sich in den Ordner der erstellten Seiten.
 
 Autor: Albert Traut
