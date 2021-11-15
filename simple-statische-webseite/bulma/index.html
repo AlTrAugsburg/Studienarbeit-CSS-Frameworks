@@ -26,31 +26,7 @@
         </span>
       </div>
     </nav>
-    <!--Für Nicht Mobilgeräte deprecated
-    <section class="hero is-fullheight is-hidden"
-        style="background: url('images/teaNerdHeroLarge.jpg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;">
 
-      <!- Hero content: will be in the middle ->
-      <div class="hero-body">
-        <div class="is-centered">
-          <img class="image is-128x128" src="images/teaNerdLogo.svg" alt="Großes Logo">
-          <div class="box container has-text-centered"
-              style="width:50vw; background-color: #ffffffA0">
-            <p class="title">
-              Tea Nerd
-            </p>
-            <p class="subtitle">
-              Der Teeladen ist Musterdorf
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
-    <!--Für Mobile Nutzer (Smartphone + Tablet)-->
     <section class="hero is-fullheight"
         style="background: url('images/teaNerdHeroMedium.jpg');
                 background-repeat: no-repeat;
@@ -80,6 +56,7 @@
       <div class="columns">
         <div class="column is-8">
           <div class="box content">
+            <h1>Tee - unsere Profession</h1>
             Im Chinesischen gibt es folgendes Sprichwort:<br>
             <p style="padding-top: 2vh; padding-left: 2vh;">
               <b>"Ein Bad erfrischt den Körper, eine Tasse Tee den Geist."</b>
@@ -88,7 +65,7 @@
             Von Earl Grey bis Früchtetee, wir haben gefühlt alles. Und mit
             unseren Eigenkreationen, haben wir immer was für die Experementierfreudigen.
             <figure class="image is-hidden-tablet">
-              <img src="images/buchUndTee.png" alt="Placeholder image">
+              <img src="images/buchUndTee.png" alt="Buch und Tee">
             </figure>
           </div>
         </div>
@@ -96,7 +73,7 @@
           <div class="card">
             <div class="card-image">
               <figure class="image">
-                <img src="images/buchUndTee.png" alt="Placeholder image">
+                <img src="images/buchUndTee.png" alt="Buch und Tee">
               </figure>
             </div>
           </div>
@@ -107,19 +84,20 @@
           <div class="card">
             <div class="card-image">
               <figure class="image">
-                <img src="images/teeErnte.png" alt="Placeholder image">
+                <img src="images/teeErnte.png" alt="Tee Ernte">
               </figure>
             </div>
           </div>
         </div>
         <div class="column is-8">
           <div class="box content">
-            <div>Aber damit man seinen Tee richtig genießen kann, geben wir unser Bestes
+            <h1>Teegenuss, ohne Nachgeschmack</h1>
+            Aber damit man seinen Tee richtig genießen kann, geben wir unser Bestes
             um auf faire Anbauweise und Verarbeitung. So kann man ohne schlechtes
             Gewissen an seiner Tasse nippen und sich sogar denken, dass man was
-            Gutes getan hat.</div>
+            Gutes getan hat.
             <figure class="image is-hidden-tablet">
-              <img src="images/teeErnte.png" alt="Placeholder image">
+              <img src="images/teeErnte.png" alt="Tee Ernte">
             </figure>
           </div>
         </div>
@@ -127,13 +105,14 @@
       <div class="columns">
         <div class="column is-8">
           <div class="box content">
+            <h1>Vor Ort, für Sie</h1>
             Unsere Mitarbeiter im Laden sind gerne für Sie da. Wir helfen Ihnen
             Ihre neue Lieblinssorte zu finden oder das perfekte Geschenk.<br>
             Und mit einem unserer Geschenkkörbe kann man absolut nichts falsch machen.<br>
             Auf Anfrage mischen wir auch Teesorten für Sie und unsere Hauskreationen
             bringen Sie durch jede Saison.
             <figure class="image is-hidden-tablet">
-              <img src="images/mitarbeiterKasse.png" alt="Placeholder image">
+              <img src="images/mitarbeiterKasse.png" alt="Mitarbeiter hinter der Kasse">
             </figure>
           </div>
         </div>
@@ -141,7 +120,7 @@
           <div class="card">
             <div class="card-image">
               <figure class="image">
-                <img src="images/mitarbeiterKasse.png" alt="Placeholder image">
+                <img src="images/mitarbeiterKasse.png" alt="Mitarbeiter hinter der Kasse">
               </figure>
             </div>
           </div>
@@ -193,7 +172,7 @@
       <div class="columns">
         <div class="column is-6">
           <!--Formular ist ohne Funktion!!!-->
-          <form class="box" onsubmit="return null;">
+          <form class="box" onsubmit="return false;">
             <h1 id="kontakt">Treten Sie mit uns in Kontakt</h1>
             <div class="field">
               <label class="label" for="name">Name</label>
@@ -202,9 +181,9 @@
               </div>
             </div>
             <div class="field">
-              <label class="label" for="e-mail">E-Mailadresse</label>
+              <label class="label" for="e-mail">E-Mail Adresse</label>
               <div class="control">
-                <input name="e-mail" id="e-mail" class="input" type="text" placeholder="Ihre E-Mailadresse">
+                <input name="e-mail" id="e-mail" class="input" type="email" placeholder="Ihre E-Mail Adresse">
               </div>
             </div>
             <div class="field">
