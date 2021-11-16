@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+//This script won't work in this context.
+/*Included it, so I know what changes I did
+  and how I did them*/
+
+//Setting colors
+$brown: #615715;
+$green: #366602;
+
+$primary: $green;
+$info: $brown;
+
+@import "bulma.sass"
