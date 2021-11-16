@@ -36,4 +36,6 @@ seines Unternehmens:
 
 ## Seiten
 
+* [Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bootstrap/)
+* [Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/foundation/)
 * [Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)

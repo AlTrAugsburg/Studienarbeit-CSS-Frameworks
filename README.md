@@ -12,6 +12,7 @@ Infos zu den einzelnen Szenarien findet sich in einem README.md in den Szenarien
 Hier kommen später Links zu den Seiten, welche mit GitHub Sites gepublished werden...
 
 * [Simple, statische Webseite mit Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bootstrap/)
+* [Simple, statische Webseite mit Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/foundation/)
 * [Simple, statische Webseite mit Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
 
 
