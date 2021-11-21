@@ -24,6 +24,6 @@ Die Firma "Schnitzeljäger" möchte ihre Produkte in einem Webshop verkaufen. Fo
 
 ## Seiten
 
-* [Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bootstrap/)
-* [Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/foundation/)
-* [Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
+* [Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bootstrap/)
+* [Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/foundation/)
+* [Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bulma/)
