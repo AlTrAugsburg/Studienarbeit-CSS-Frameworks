@@ -3,7 +3,7 @@ Hier sind Codebeispiele zu meiner Studienarbeit "CSS-Frameworks - drei bekannter
 
 Hier werden Beispielseite mit den CSS-Frameworks hochgeladen, welche in der Arbeit referenziert werden.
 
-**Achtung!** Alle Szenarien sind rein fiktiv. Jegliche Übereinstimmung mit der Realität ist ungewollt und rein zufällig. Sollte es diesbezüglich Probleme geben, wenden Sie sich bitte direkt an mich.
+**Achtung!** Alle Szenarien sind rein fiktiv. Jegliche Übereinstimmung mit der Realität ist ungewollt und rein zufällig. Deswegen gibt es auch kein Impressum für die einzelnen Seiten, um Verwirrungen zu vermeiden. Sollte es diesbezüglich Probleme geben, wenden Sie sich bitte direkt an mich.
 
 Aufgebaut ist das Repository wie folgt: Es gibt zu jedem Beispielszenario einen Ordner, welcher in drei Unterordner aufgeteilt ist. Diese enthalten das jeweilige Ergbnis/die jeweilige Seite, welche mit dem CSS-Framework gemacht wurde, wie der Ordner heißt.
 <!--(Sprachlich nicht schön, muss es noch umformulieren... Irgendwann)-->
