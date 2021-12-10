@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schnitzeljäger - Produktbeispiel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style media="screen">
+    .navbar.is-light .navbar-brand > a.navbar-item:hover {
+    background-color: transparent;
+    color: #999999;
+    }
+    </style>
+    <script type="text/javascript">
+      function toast() {
+        alert("prototype toast");
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img class="is-rounded is-128x128" src="assets/sj-logo.png">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Alle Produkte
+          </a>
+
+          <a class="navbar-item">
+            Unsere Spezialschnitzel
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Mehr
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Über uns
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Kontakt
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            Folge uns hier:&emsp;
+            <div class="buttons">
+              <a class="button is-info">
+                Twitter
+              </a>
+              <a class="button is-warning">
+                Instagram
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item">
+            <a class="button is-primary">🛒 &nbsp;&nbsp;3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Beginn Produktseite-->
+    <div class="columns mx-6" style="margin-top: 5vh;">
+      <div class="column is-4">
+        <div class="box">
+          <figure class="image is-256x256">
+            <img src="assets/sj-logo.png">
+          </figure>
+        </div>
+      </div>
+      <div class="column is-8">
+        <div class="box content">
+          <h2>Produktbeispiel</h2>
+          <form class="" action="index.html" onsubmit="return toast();">
+            <div class="columns"> <!--is-flex is-flex-direction-row is-justify-content-space-between -->
+              <div class="column is-4">
+                <div class="columns is-mobile">
+                  <div class="column is-6">
+                    <input class="input" min=1 type="number" id="count" name="count" value=1>
+                  </div>
+                  <div class="column is-6 is-flex is-flex-direction-column is-justify-content-space-evenly">
+                    <label for="count">Stück</label>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-4 is-offset-4 is-flex is-flex-direction-row-reverse">
+                <input class="button is-primary" type="submit" name="" value="In den Warenkorb">
+              </div>
+            </div>
+          </form>
+          <div class="content mt-4">
+            <h3>Über das Produkt</h3>
+            <h4>Inhalt:</h4>
+            <p>Some stuff, some more stuff, even more stuff</p>
+            <h4>Beschreibung</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer has-background-grey-lighter">
+      <div class="content has-text-centered">
+        <p>
+          <strong>&#169;Schnitzeljäger</strong><br class="is-hidden-desktop">
+          &emsp;<a href="">Impressum</a><br class="is-hidden-desktop">
+          &emsp;<a href="">Datenschutzerklärung</a><br class="is-hidden-desktop">
+          &emsp;Dies ist ein Template mit rein fiktionalen Daten
+        </p>
+      </div>
+    </footer>
+
+  </body>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+    });
+  </script>
+</html>
