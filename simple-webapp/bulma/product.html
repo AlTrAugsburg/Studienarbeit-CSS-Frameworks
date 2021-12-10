@@ -16,6 +16,32 @@
         alert("prototype toast");
         return false;
       }
+
+      var numberImages = 2;
+      var imageNow = 1;
+
+      function changeImageForward() {
+        if(imageNow < numberImages){
+          document.getElementById("image"+imageNow).classList.add("is-hidden");
+          imageNow++;
+          document.getElementById("image"+imageNow).classList.remove("is-hidden");
+          if(imageNow == numberImages){
+            document.getElementById("forward").disabled = true;
+          }
+          document.getElementById("back").disabled = false;
+        }
+      }
+      function changeImageBackward() {
+        if(imageNow > 1){
+          document.getElementById("image"+imageNow).classList.add("is-hidden");
+          imageNow--;
+          document.getElementById("image"+imageNow).classList.remove("is-hidden");
+          if(imageNow == 1){
+            document.getElementById("back").disabled = true;
+          }
+          document.getElementById("forward").disabled = false;
+        }
+      }
     </script>
   </head>
   <body>
@@ -34,7 +60,7 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item">
+          <a href="index.html" class="navbar-item">
             Home
           </a>
 
@@ -89,13 +115,18 @@
       <div class="column is-4">
         <div class="box">
           <figure class="image is-256x256">
-            <img src="assets/sj-logo.png">
-          </figure>
+            <img id="image1" alt="Fleischhammer auf rohem Fleisch" src="assets/raw-meat.jpg">
+            <img id="image2" class="is-hidden" src="assets/breaded.jpg" alt="">
+          </figure><br>
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <button id="back" class="button pagination-previous" onclick="changeImageBackward();" disabled><</button>
+            <button id="forward" class="button pagination-next" onclick="changeImageForward();" >></button>
+          </nav>
         </div>
       </div>
       <div class="column is-8">
         <div class="box content">
-          <h2>Produktbeispiel</h2>
+          <h2>Klassisches Schweineschnitzel</h2>
           <form class="" action="index.html" onsubmit="return toast();">
             <div class="columns"> <!--is-flex is-flex-direction-row is-justify-content-space-between -->
               <div class="column is-4">
@@ -108,7 +139,7 @@
                   </div>
                 </div>
               </div>
-              <div class="column is-4 is-offset-4 is-flex is-flex-direction-row-reverse">
+              <div class="column is-4">
                 <input class="button is-primary" type="submit" name="" value="In den Warenkorb">
               </div>
             </div>
@@ -116,15 +147,26 @@
           <div class="content mt-4">
             <h3>Über das Produkt</h3>
             <h4>Inhalt:</h4>
-            <p>Some stuff, some more stuff, even more stuff</p>
+            <p>Schweinefleisch von der Hüfte, 8 mm; Knusperpanade; vakumierte Bratensoße unseres Sternekochs</p>
             <h4>Beschreibung</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Simple, und doch einer unser Spezialitäten: das klassische Schweineschnitzel.</p>
+            <p>
+              Hol dir jetzt Restaurantfeeling nach Hause, mit den feinsten Zutaten, die einem nicht das
+              Portemonnaie komplett leert. Und dazu unsere fast patentreife Kunsperpanade. Warum nur fast?
+              Nun wir sind uns nicht sicher, ob es möglich ist Brotkrümmel zu patentieren... Jetzt ist das
+              Geheimnis raus.
+            </p>
+            <p>
+              Du glaubst dem ganzen Werbegelabber nicht? Dann kauf es dir und mach dir selbst
+              ein Bild davon. Glaub mir, du wirst es nicht bereuen.
+            </p>
+            <h5>Was gut dazu passt:</h5>
+            <p>
+              Zu diesem klassischen Gericht passen Beilagen aus Kartoffeln, z.B.
+              Kartoffelknödel, Pommes, Kartoffelbrei, Kroketten. Auch Buttergemüse kann diese Kreation abrunden.
+              Falls ihr Ketchup zu Schnitzel und Pommes bevorzugt, unsere vakumierte Bratensoße hält
+              ohne Probleme eine Woche.
+            </p>
           </div>
         </div>
       </div>
@@ -168,5 +210,7 @@
     }
 
     });
+
+    document.getElementById("back").disabled = true;
   </script>
 </html>
