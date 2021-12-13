@@ -14,6 +14,9 @@ Hier kommen später Links zu den Seiten, welche mit GitHub Sites gepublished wer
 * [Simple, statische Webseite mit Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bootstrap/)
 * [Simple, statische Webseite mit Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/foundation/)
 * [Simple, statische Webseite mit Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
+* [Simple Webapp, Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bootstrap/)
+* [Simple Webapp, Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/foundation/)
+* [Simple Webapp, Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bulma/)
 
 
 Die Lizenz für die verwendeten Frameworks befindet sich in den Ordner der erstellten Seiten.
