@@ -101,15 +101,15 @@
             Folge uns hier:&emsp;
             <div class="buttons">
               <a class="button is-info">
-                Twitter
+                🐦 Twitter
               </a>
               <a class="button is-warning">
-                Instagram
+                📸 Instagram
               </a>
             </div>
           </div>
           <div class="navbar-item">
-            <a class="button is-primary">🛒 &nbsp;&nbsp;3</a>
+            <a class="button is-primary" onclick="openModal();">🛒 &nbsp;&nbsp;3</a>
           </div>
         </div>
       </div>
@@ -184,6 +184,223 @@
       </div>
     </div>
 
+    <div class="modal" id="warenkorb">
+      <div class="modal-background" onclick="closeModal();"></div>
+      <div class="modal-content is-hidden-desktop">
+        <div class="box mx-2">
+          <div class="is-flex is-justify-content-flex-end">
+            <button class="delete is-medium" onclick="closeModal();"></button>
+          </div><br>
+          <div class="content">
+            <h4>Warenkorb</h4>
+            <div>
+              <div class="card mt-2">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="assets/sj-logo.png" alt="small product image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Klassisches Schweineschnitzel</p>
+                      <p class="subtitle is-6">13€ pro Portion</p>
+                      <input class="input" type="number" name="" min="1" value="3">
+                      <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-2">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="assets/sj-logo.png" alt="small product image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Klassisches Schweineschnitzel</p>
+                      <p class="subtitle is-6">13€ pro Portion</p>
+                      <input class="input" type="number" name="" min="1" value="3">
+                      <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-2">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="assets/sj-logo.png" alt="small product image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">Klassisches Schweineschnitzel</p>
+                      <p class="subtitle is-6">13€ pro Portion</p>
+                      <input class="input" type="number" name="" min="1" value="3">
+                      <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box my-3 content has-text-right">
+                <p>Versandkosten: 15€</p>
+                <p>Summe: <b id="gesamt">132€</b></p>
+                <button class="button is-primary" type="button" name="button">Zur Kasse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-content is-flex is-justify-content-flex-end mr-0 is-hidden-touch">
+        <div style="width: 50vw; min-height: 90vh;">
+          <div class="box">
+            <div class="is-flex is-justify-content-flex-end">
+              <button class="delete is-medium" onclick="closeModal();"></button>
+            </div><br>
+            <div class="content">
+              <h4>Warenkorb</h4>
+              <div class="is-flex is-flex-direction-column is-align-content-space-evenly">
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2">
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="assets/sj-logo.png" alt="small product image">
+                        </figure>
+                      </div>
+                      <div class="media-content is-flex is-flex-direction-row">
+                        <div>
+                          <p class="title is-4">Klassisches Schweineschnitzel</p>
+                          <p class="subtitle is-6">13€ pro Portion</p>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                          <input class="input" type="number" min="1" name="" value="3">
+                          <p class="mt-2">Preis: <b id="preis">39€</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box my-3 content has-text-right">
+                  <p>Versandkosten: 15€</p>
+                  <p>Summe: <b id="gesamt">132€</b></p>
+                  <button class="button is-primary" type="button" name="button">Zur Kasse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer has-background-grey-lighter">
       <div class="content has-text-centered">
         <p>
@@ -198,6 +415,15 @@
 
   </body>
   <script type="text/javascript">
+
+    function openModal() {
+      document.getElementById("warenkorb").classList.add("is-active");
+    }
+
+    function closeModal() {
+      document.getElementById("warenkorb").classList.remove("is-active");
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
