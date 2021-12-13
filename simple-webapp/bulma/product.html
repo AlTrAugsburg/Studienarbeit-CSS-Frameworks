@@ -13,7 +13,8 @@
     </style>
     <script type="text/javascript">
       function toast() {
-        alert("prototype toast");
+        document.getElementById("notification").classList.remove("is-hidden");
+        setTimeout(closeNotification, 5000);
         return false;
       }
 
@@ -42,9 +43,12 @@
           document.getElementById("forward").disabled = false;
         }
       }
+      function closeNotification() {
+        document.getElementById("notification").classList.add("is-hidden");
+      }
     </script>
   </head>
-  <body>
+  <body style="min-height: 100vh;">
     <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
@@ -64,7 +68,7 @@
             Home
           </a>
 
-          <a class="navbar-item">
+          <a href="allProducts.html" class="navbar-item">
             Alle Produkte
           </a>
 
@@ -111,7 +115,7 @@
     </nav>
 
     <!--Beginn Produktseite-->
-    <div class="columns mx-6" style="margin-top: 5vh;">
+    <div class="columns mx-5" style="margin-top: 5vh;">
       <div class="column is-4">
         <div class="box">
           <figure class="image is-256x256">
@@ -172,6 +176,13 @@
       </div>
     </div>
 
+    <div class="is-flex pr-2 pl-2 is-justify-content-center is-align-content-center" style="position: fixed; bottom: 10px; width: 100%;">
+      <div id="notification" class="notification is-primary is-hidden">
+        <button onclick="closeNotification();" class="delete"></button>
+        Der Artikel wurde dem Einkaufswagen erfolgreich hinzugefügt.
+      </div>
+    </div>
+
     <footer class="footer has-background-grey-lighter">
       <div class="content has-text-centered">
         <p>
@@ -182,6 +193,7 @@
         </p>
       </div>
     </footer>
+
 
   </body>
   <script type="text/javascript">
