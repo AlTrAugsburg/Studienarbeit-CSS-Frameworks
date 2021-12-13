@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Schnitzeljäger</title>
+    <link rel="icon" href="assets/sj-logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <style media="screen">
     .navbar.is-light .navbar-brand > a.navbar-item:hover {
@@ -72,7 +73,7 @@
             </div>
           </div>
           <div class="navbar-item">
-            <a class="button is-primary">🛒 &nbsp;&nbsp;3</a>
+            <a class="button is-primary" onclick="openModal();">🛒 &nbsp;&nbsp;3</a>
           </div>
         </div>
       </div>
@@ -184,6 +185,32 @@
       </div>
     </div>
 
+    <div class="modal" id="warenkorb">
+      <div class="modal-background" onclick="closeModal();"></div>
+      <div class="modal-content is-hidden-desktop">
+        <div class="box mx-2">
+          <div class="is-flex is-justify-content-flex-end">
+            <button class="delete is-medium" onclick="closeModal();"></button>
+          </div><br>
+          <div class="content">
+            <h4>Warenkorb</h4>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-content is-flex is-justify-content-flex-end mr-0 is-hidden-touch">
+        <div class="box" style="width: 40vw; height: 90vh;">
+          <div class="is-flex is-justify-content-flex-end">
+            <button class="delete is-medium" onclick="closeModal();"></button>
+          </div><br>
+          <div class="content">
+            <h4>Warenkorb</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer has-background-grey-lighter">
       <div class="content has-text-centered">
         <p>
@@ -197,6 +224,16 @@
 
   </body>
   <script type="text/javascript">
+
+    function openModal() {
+      document.getElementById("warenkorb").classList.add("is-active");
+    }
+
+    function closeModal() {
+      document.getElementById("warenkorb").classList.remove("is-active");
+    }
+
+
     document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
