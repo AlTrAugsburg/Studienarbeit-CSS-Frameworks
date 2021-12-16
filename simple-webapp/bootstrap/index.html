@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schnitzeljäger</title>
+    <link rel="icon" href="assets/sj-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/sj-logo.png" style="width: 32px;" class="img-thumbnail" alt="Schnitzeljäger Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="allProducts.html">Alle Produkte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Unsere Spezialschnitzel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mehr
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Über uns</a></li>
+                <li><a class="dropdown-item" href="#">Jobs</a></li>
+                <li><a class="dropdown-item" href="#">Kontakt</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav gap-3 d-flex">
+            <li class="nav-item navbar-text">Folge uns hier:<br><div class="d-block d-lg-none">
+              <button class="btn btn-info" type="button" name="button">🐦 Twitter</button>&nbsp;&nbsp;<button class="btn btn-warning" type="button" name="button">📸 Instagram</button>
+            </div></li>
+            <li class="nav-item d-none d-lg-block"><button class="btn btn-info" type="button" name="button">🐦 Twitter</button>&nbsp;&nbsp;<button class="btn btn-warning" type="button" name="button">📸 Instagram</button>&nbsp;&nbsp;</li>
+            <li class="nav-item"><button class="btn btn-primary" type="button" name="button"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">🛒 &nbsp;&nbsp;3</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center" style="background: url('assets/hero.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 60vh; width: 100%;">
+      <div class="d-none d-lg-block d-flex justify-content-start w-100">
+        <div class="d-flex flex-column justify-content-center h-100">
+          <div class="row flex-lg-row-reverse align-items-left py-5 ps-3 text-light">
+              <h1 class="display-5 fw-bold lh-1 mb-3"><u>Schnitzeljäger</u></h1>
+              <p class="lead">Auf der Jagd nach Schnitzel-Perfektion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-lg-none d-flex flex-column justify-content-center">
+        <div class="container w-auto">
+          <div class="align-items-center rounded-3 border shadow-lg bg-light bg-opacity-50 w-auto p-4">
+            <div class="d-flex justify-content-center">
+              <div class="d-flex flex-column justify-content-center">
+                <h1 class="display-4 fw-bold lh-1 text-center"><u>Schnitzeljäger</u></h1>
+                <p class="lead text-center">Auf der Jagd nach Schnitzel-Perfektion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3 mx-4">
+      <div class="card-body text-center">
+        <h2><u>Erlebe das Schnitzel neu</u></h2>
+        <p>Unsere Schnitzelkreationen bestehen nur aus dem besten Fleisch aus der Region. Vergiss das günstige Discounter Schnitzel, du verdienst nur das Beste vom Besten.</p>
+        <p>Unsere Mission ist dir ein schnitzeltastisches Erlebnis zu bieten, dass du nicht so schnell vergisst. Unsere Kreationen nehmen dich auf eine kullinarische Weltreise, damit du das Schnitzel komplett neu entdeckst. Das klingt doch super, oder?</p>
+      </div>
+    </div>
+
+    <div class="card my-3 mx-4">
+      <div class="card-body">
+        <h3>Unsere Bestseller</h3>
+        <div class="container">
+          <div class="row justify-content-center align-content-between">
+            <div class="col-12 col-md-4 my-2">
+              <a class="text-reset text-decoration-none" href="product.html">
+                <div class="card">
+                  <img src="assets/raw-meat.jpg" class="card-img-top" alt="Produktbild klassiches Schweineschnitzel">
+                  <div class="card-body is-primary">
+                    Klassiches Schweineschnitzel
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-100 d-block d-md-none"></div>
+            <div class="col-12 col-md-4 my-2">
+              <a class="text-reset text-decoration-none">
+                <div class="card">
+                  <img src="assets/breaded.jpg" class="card-img-top" alt="Produktbild klassiches Schweineschnitzel">
+                  <div class="card-body is-primary">
+                    Schnitzel No.2
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-100 d-block d-md-none"></div>
+            <div class="col-12 col-md-4 my-2">
+              <a class="text-reset text-decoration-none">
+                <div class="card">
+                  <img src="assets/breaded.jpg" class="card-img-top" alt="Produktbild klassiches Schweineschnitzel">
+                  <div class="card-body is-primary">
+                    Schnitzel No.3
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-100 d-block d-md-none"></div>
+            <div class="col-12 col-md-4 my-2">
+              <a class="text-reset text-decoration-none">
+                <div class="card">
+                  <img src="assets/breaded.jpg" class="card-img-top" alt="Produktbild klassiches Schweineschnitzel">
+                  <div class="card-body is-primary">
+                    Schnitzel No.4
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="w-100 d-block d-md-none"></div>
+            <div class="col-12 col-md-4 my-2">
+              <a class="text-reset text-decoration-none">
+                <div class="card">
+                  <img src="assets/breaded.jpg" class="card-img-top" alt="Produktbild klassiches Schweineschnitzel">
+                  <div class="card-body is-primary">
+                    Schnitzel No.5
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Warenkorb</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="d-flex flex-column justify-content-around h-100">
+                <img src="assets/sj-logo.png" class="img-fluid rounded-start ms-3" alt="kleines Produktlogo klassiches Schweineschnitzel">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Klassisches Schweineschnitzel</h5>
+                <p class="card-text"><small class="text-muted">13€ pro Portion</small></p>
+                <div class="card-text d-flex flex-row">
+                  <input type="number" class="form-control" style="width: 40%;" name="" value="3">
+                  <div class="d-flex flex-column justify-content-center" style="width: 40%;">
+                    <div class="ms-2">Preis: <b>39€</b></div>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ms-2">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center w-100" style="position: sticky; bottom: 0;">
+          <div class="card" style="width: 80%;">
+            <div class="card-body text-end">
+              <p>Versandkosten: 4,99€<br>
+              Summe: <b>132,00€</b></p>
+              <button class="btn btn-primary w-100" type="button" name="button">Jetzt kaufen</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="navbar sticky-bottom navbar-light pt-4 pb-3" style="background-color: #dbdbdb;">
+      <div class="container-fluid d-flex flex-row justify-content-center">
+        <p>
+          <strong>&#169;Schnitzeljäger</strong><br class="d-md-block d-lg-none">
+          &emsp;<a href="">Impressum</a><br class="d-md-block d-lg-none">
+          &emsp;<a href="">Datenschutzerklärung</a><br class="d-md-block d-lg-none">
+          &emsp;Dies ist ein Template mit rein fiktionalen Daten
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
