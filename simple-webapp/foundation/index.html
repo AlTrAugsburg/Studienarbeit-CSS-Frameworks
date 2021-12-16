@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="has-navbar-fixed-top" lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Schnitzeljäger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="images/teaNerdLogo.svg">
+    <!--Einbinden des Bulma CSS-Frameworks-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js" integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="title-bar grid-x grid-padding-x align-justify" data-responsive-toggle="example-menu" data-hide-for="large">
+      <a href="index.html"><img src="assets/sj-logo.png" class="thumbnail margin-bottom-0" style="width: 32px;" alt=""></a>
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    </div>
+
+    <div class="top-bar hide-for-large" id="example-menu">
+      <div class="top-bar-left">
+        <ul class="vertical menu" data-responsive-menu="drilldown accordion">
+          <li class="active"><a>Home</a></li>
+          <li><a href="#">Alle Produkte</a></li>
+          <li><a href="#">Unsere Spezialschnitzel</a></li>
+          <li>
+            <a href="#">Mehr</a>
+            <ul class="vertical menu">
+              <li><a href="#">Über uns</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Kontakte</a></li>
+            </ul>
+          </li>
+          <li class="menu-text">
+            <p>Folge uns hier:</p><a class="button primary margin-bottom-1" href="#">🐦 Twitter</a><a class="button warning" href="#">📸 Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="top-bar show-for-large">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text"><a class="padding-0" href="index.html"><img src="assets/sj-logo.png" class="thumbnail margin-bottom-0" style="width: 32px;" alt=""></a></li>
+          <li class="grid-y align-center active"><a>Home</a></li>
+          <li class="grid-y align-center"><a href="allProducts.html">Alle Produkte</a></li>
+          <li class="grid-y align-center"><a href="#">Unsere Spezialschnitzel</a></li>
+          <li class="grid-y align-center">
+            <a href="#">Mehr</a>
+            <ul class="menu vertical">
+              <li><a href="#">Über uns</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li class="menu-text">Folge uns hier: </li>
+          <li><a class="button primary" href="#">🐦 Twitter</a></li>&nbsp;&nbsp;
+          <li><a class="button warning" href="#">📸 Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1>Hello world.</h1>
+  </body>
+  <script>
+      $(document).foundation();
+    </script>
+</html>
