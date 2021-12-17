@@ -3,14 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Schnitzeljäger</title>
+    <link rel="icon" href="assets/sj-logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon" href="images/teaNerdLogo.svg">
     <!--Einbinden des Bulma CSS-Frameworks-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js" integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw==" crossorigin="anonymous"></script>
+    <style media="screen">
+      .hero-section {
+        background: url("assets/hero.png") 50% no-repeat;
+        background-size: cover;
+        height: 40vh;
+      }
+
+      .hero-section .hero-section-text {
+        color: #fefefe;
+        text-shadow: 1px 1px 2px #0a0a0a;
+      }
+      .backgroundSeeThrough{
+        background: #ffffffA0;
+      }
+    </style>
   </head>
   <body>
 
@@ -23,7 +38,7 @@
       <div class="top-bar-left">
         <ul class="vertical menu" data-responsive-menu="drilldown accordion">
           <li class="active"><a>Home</a></li>
-          <li><a href="#">Alle Produkte</a></li>
+          <li><a href="#allProducts.thml">Alle Produkte</a></li>
           <li><a href="#">Unsere Spezialschnitzel</a></li>
           <li>
             <a href="#">Mehr</a>
@@ -34,7 +49,9 @@
             </ul>
           </li>
           <li class="menu-text">
-            <p>Folge uns hier:</p><a class="button primary margin-bottom-1" href="#">🐦 Twitter</a><a class="button warning" href="#">📸 Instagram</a>
+            <p>Folge uns hier:</p><a class="button primary margin-bottom-1" href="#">🐦 Twitter</a>
+            <a class="button warning margin-bottom-1" href="#">📸 Instagram</a>
+            <a class="button secondary" href="#">🛒 &nbsp;&nbsp;3</a>
           </li>
         </ul>
       </div>
@@ -61,12 +78,103 @@
         <ul class="menu">
           <li class="menu-text">Folge uns hier: </li>
           <li><a class="button primary" href="#">🐦 Twitter</a></li>&nbsp;&nbsp;
-          <li><a class="button warning" href="#">📸 Instagram</a></li>
+          <li><a class="button warning" href="#">📸 Instagram</a></li>&nbsp;&nbsp;
+          <li><a class="button secondary" data-toggle="offCanvas">🛒 &nbsp;&nbsp;3</a></li>
         </ul>
       </div>
     </div>
 
-    <h1>Hello world.</h1>
+    <div class="hero-section grid-x show-for-large">
+      <div class="hero-section-text grid-y align-center margin-left-1">
+        <h2 class="text-underline">Schnitzeljäger</h2>
+        <p>Auf der Jagd nach Schnitzelperfektion</p>
+      </div>
+    </div>
+
+    <div class="hero-section grid-x align-center hide-for-large">
+      <div class="hero-section-text grid-y align-center">
+        <div class="card backgroundSeeThrough flex-child-shrink">
+          <div class="card-section">
+            <h3 class="text-underline">Schnitzeljäger</h3>
+            <p>Auf der Jagd nach Schnitzelperfektion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-center margin-2 padding-1 flex-child-shrink">
+      <h2 class=" text-underline">Erlebe das Schnitzel neu</h2>
+      <p>Unsere Schnitzelkreationen bestehen nur aus dem besten Fleisch aus der Region. Vergiss das günstige Discounter Schnitzel, du verdienst nur das Beste vom Besten.</p>
+      <p>Unsere Mission ist dir ein schnitzeltastisches Erlebnis zu bieten, dass du nicht so schnell vergisst. Unsere Kreationen nehmen dich auf eine kullinarische Weltreise, damit du das Schnitzel komplett neu entdeckst. Das klingt doch super, oder?</p>
+    </div>
+
+    <div class="card margin-2 padding-1 flex-child-shrink">
+      <h3><b>Unsere Bestseller</b></h3>
+      <div class="grid-x align-center">
+        <div class="cell small-12 medium-6 large-4 padding-1">
+          <a href="product.html" class="card">
+            <img src="assets/raw-meat.jpg" style="width: 100%;" alt="Rohes Fleisch, Produktbild klassisches Schweineschnitzel">
+            <div class="card-section">
+              Klassisches Schweineschnitzel
+            </div>
+          </a>
+        </div>
+        <div class="cell small-12 medium-6 large-4 padding-1">
+          <div class="card">
+            <img src="assets/breaded.jpg" style="width: 100%;" alt="Rohes Fleisch, Produktbild klassisches Schweineschnitzel">
+            <div class="card-section">
+              Schnitzel No.2
+            </div>
+          </div>
+        </div>
+        <div class="cell small-12 medium-6 large-4 padding-1">
+          <div class="card">
+            <div class="card">
+              <img src="assets/breaded.jpg" style="width: 100%;" alt="Rohes Fleisch, Produktbild klassisches Schweineschnitzel">
+              <div class="card-section">
+                Schnitzel No.3
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell small-12 medium-6 large-4 padding-1">
+          <div class="card">
+            <div class="card">
+              <img src="assets/breaded.jpg" style="width: 100%;" alt="Rohes Fleisch, Produktbild klassisches Schweineschnitzel">
+              <div class="card-section">
+                Schnitzel No.4
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell small-12 medium-6 large-4 padding-1">
+          <div class="card">
+            <div class="card">
+              <img src="assets/breaded.jpg" style="width: 100%;" alt="Rohes Fleisch, Produktbild klassisches Schweineschnitzel">
+              <div class="card-section">
+                Schnitzel No.5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h3>Warenkorb</h3>
+    </div>
+
+    <footer class="" style="background-color: #dbdbdb; padding-top: 1rem; padding-bottom: 0.5rem;">
+      <ul class="vertical medium-horizontal menu align-center">
+        <li class="menu-text">&#169;Schnitzeljäger</li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutzerklärung</a></li>
+        <li>Dies ist ein Template mit rein fiktionalen Daten</li>
+      </ul>
+    </footer>
   </body>
   <script>
       $(document).foundation();
