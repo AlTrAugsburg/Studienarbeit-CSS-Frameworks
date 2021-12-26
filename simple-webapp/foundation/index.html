@@ -29,37 +29,10 @@
   </head>
   <body>
 
-    <div data-sticky-container>
-      <div data-sticky data-options="marginTop:0;">
-        <div class="title-bar grid-x grid-padding-x align-justify" data-responsive-toggle="example-menu" data-hide-for="large">
-          <a href="index.html"><img src="assets/sj-logo.png" class="thumbnail margin-bottom-0" style="width: 32px;" alt=""></a>
-          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-        </div>
+    <div class="show-for-large" data-sticky-container>
+      <div class="sticky" data-sticky data-margin-top="0" style="width:100%;">
 
-        <div class="top-bar hide-for-large" data-sticky data-options="marginTop:0;" id="example-menu">
-          <div class="top-bar-left">
-            <ul class="vertical menu" data-responsive-menu="drilldown accordion">
-              <li class="active"><a>Home</a></li>
-              <li><a href="allProducts.html">Alle Produkte</a></li>
-              <li><a href="#">Unsere Spezialschnitzel</a></li>
-              <li>
-                <a href="#">Mehr</a>
-                <ul class="vertical menu">
-                  <li><a href="#">Über uns</a></li>
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">Kontakte</a></li>
-                </ul>
-              </li>
-              <li class="menu-text">
-                <p>Folge uns hier:</p><a class="button primary margin-bottom-1" href="#">🐦 Twitter</a>
-                <a class="button warning margin-bottom-1" href="#">📸 Instagram</a>
-                <a class="button secondary" data-toggle="offCanvas">🛒 &nbsp;&nbsp;3</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="top-bar show-for-large" data-sticky data-options="marginTop:0;">
+        <div class="top-bar show-for-large" data-options="marginTop:0;">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
               <li class="menu-text"><a class="padding-0" href="index.html"><img src="assets/sj-logo.png" class="thumbnail margin-bottom-0" style="width: 32px;" alt=""></a></li>
@@ -85,7 +58,39 @@
             </ul>
           </div>
         </div>
-      </div>  
+      </div>
+    </div>
+
+    <div class="hide-for-large" data-sticky-container>
+      <div class="sticky" style="width:100%; position: fixed; top: 0;">
+        <div class="title-bar grid-x grid-padding-x align-justify" data-responsive-toggle="example-menu" data-hide-for="large">
+          <a href="index.html"><img src="assets/sj-logo.png" class="thumbnail margin-bottom-0" style="width: 32px;" alt=""></a>
+          <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        </div>
+
+        <div class="top-bar hide-for-large" data-options="marginTop:0;" id="example-menu">
+          <div class="top-bar-left">
+            <ul class="vertical menu" data-responsive-menu="drilldown accordion">
+              <li class="active"><a>Home</a></li>
+              <li><a href="allProducts.html">Alle Produkte</a></li>
+              <li><a href="#">Unsere Spezialschnitzel</a></li>
+              <li>
+                <a href="#">Mehr</a>
+                <ul class="vertical menu">
+                  <li><a href="#">Über uns</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Kontakte</a></li>
+                </ul>
+              </li>
+              <li class="menu-text">
+                <p>Folge uns hier:</p><a class="button primary margin-bottom-1" href="#">🐦 Twitter</a>
+                <a class="button warning margin-bottom-1" href="#">📸 Instagram</a>
+                <a class="button secondary" data-toggle="offCanvas">🛒 &nbsp;&nbsp;3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="hero-section grid-x show-for-large">
