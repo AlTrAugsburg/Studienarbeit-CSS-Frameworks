@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html style="has-navbar-fixed-top" lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Schnitzeljäger - Checkout</title>
+    <link rel="icon" href="assets/sj-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--Einbinden des Bulma CSS-Frameworks-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css" integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js" integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw==" crossorigin="anonymous"></script>
+    <style media="screen">
+      .hero-section {
+        background: url("assets/raw-meat.jpg") 50% no-repeat;
+        background-size: cover;
+        height: 40vh;
+      }
+
+      .hero-section .hero-section-text {
+        color: #010101;
+        text-shadow: 1px 1px 2px #0a0a0a;
+      }
+      .backgroundSeeThrough{
+        background: #ffffffA0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="padding-vertical-2 text-center">
+      <div class="grid-x align-center align-middle"><a href="index.html"><img src="assets/sj-logo.png" style="width: 40px;" class="thumbnail" alt="Schnitzeljäger Logo"></a>&nbsp;<h2>Checkout</h2></div>
+    </div>
+    <div class="grid-x margin-horizontal-3 margin-bottom-2 grid-margin-x">
+      <div class="cell small-12 hide-for-medium medium-5 ">
+        <table>
+          <thead>
+            <tr>
+              <th width="200">
+                <span class="text-primary">Einkaufswagen</span>
+              </th>
+              <th width="150">
+                <span class="badge bg-primary rounded-pill">3</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+
+              </td>
+            </tr>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+
+              </td>
+            </tr>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="callout primary">
+              <td><h6 class="my-0">Promo Code</h6><small class="text-muted">"Schnitzelmeister"</small></td>
+              <td>
+                <div class="grid-x align-right">
+                  <span class="text-success">− 5€</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="callout secondary">
+              <td>
+                <span>Total (EUR)</span>
+              </td>
+              <td class="grid-x align-right">
+                <strong>112€</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card padding-horizontal-1 padding-top-1">
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-8">
+              <input type="text" class="form-control" placeholder="Promocode">
+            </div>
+            <div class="cell small-4">
+              <button type="submit" class="button">Einlösen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cell small-12 medium-7">
+        <h4 class="margin-bottom-1">Rechnungsadresse</h4>
+        <form>
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6">
+              <label for="firstName" class="form-label">Vorname</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            </div>
+
+            <div class="cell small-12 medium-6">
+              <label for="lastName" class="form-label">Nachname</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            </div>
+
+            <div class="cell small-12">
+              <label for="email" class="form-label">E-Mail Adresse</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="cell small-12">
+              <label for="address" class="form-label">Straße und Hausnummer</label>
+              <input type="text" class="form-control" id="address" placeholder="z.B. Musterstr. 1" required="">
+            </div>
+
+            <div class="cell small-12">
+              <label for="address2" class="form-label">Adresszusatz<span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Adresszusatz">
+            </div>
+
+            <div class="cell small-12 medium-5">
+              <label for="country" class="form-label">Land</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Auswählen...</option>
+                <option>Deutschland</option>
+              </select>
+            </div>
+
+            <div class="cell small-12 medium-4">
+              <label for="state" class="form-label">Bundesland</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Auswählen...</option>
+                <option>Bayern</option>
+                <option>Berlin</option>
+                <option>Hessen</option>
+                <option>Sachsen</option>
+                <option>Sachsen Anhalt</option>
+                <option>Schleswig Holstein</option>
+                <option>Und viele mehr...</option>
+              </select>
+            </div>
+
+            <div class="cell small-12 medium-3">
+              <label for="zip" class="form-label">Postleitzahl</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="form-check">
+            <input type="checkbox" id="same-address">
+            <label for="same-address">Gleiche Rechnungsadresse, wie Lieferadresse</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="save-info">
+            <label for="save-info">Informationen für das nächste Mal speichern</label>
+          </div>
+
+          <hr>
+
+          <h4 class="mb-3">Zahlungsart</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for="credit">Kreditkarte</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="debit">Girokarte</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6">
+              <label for="cc-name" class="form-label">Name des Karteninhabers</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="Wie auf der Kreditkarte" required="">
+            </div>
+
+            <div class="cell small-12 medium-6">
+              <label for="cc-number" class="form-label">Kreditkartennummer</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+            </div>
+
+            <div class="cell small-12 medium-3">
+              <label for="cc-expiration" class="form-label">Ablaufdatum</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+            </div>
+
+            <div class="cell small-12 medium-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="button primary width-100" type="submit">Fortfahren mit dem Checkout</button>
+        </form>
+      </div>
+      <div class="cell medium-5 hide-for-small-only">
+        <table>
+          <thead>
+            <tr>
+              <th width="200">
+                <span class="text-primary">Einkaufswagen</span>
+              </th>
+              <th width="150">
+                <span class="badge bg-primary rounded-pill">3</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+
+              </td>
+            </tr>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+
+              </td>
+            </tr>
+            <tr>
+              <td><h6 class="my-0">Klassiches Schweineschnitzel</h6><small class="text-muted">13€ pro Portion</small></td>
+              <td>
+                <div class="grid-x align-right align-middle">
+                  <span class="badge primary">3</span>&nbsp;&nbsp;
+                  <span class="text-muted">39€</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="callout primary">
+              <td><h6 class="my-0">Promo Code</h6><small class="text-muted">"Schnitzelmeister"</small></td>
+              <td>
+                <div class="grid-x align-right">
+                  <span class="text-success">− 5€</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="callout secondary">
+              <td>
+                <span>Total (EUR)</span>
+              </td>
+              <td class="grid-x align-right">
+                <strong>112€</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card padding-horizontal-1 padding-top-1">
+          <div class="grid-x grid-margin-x">
+            <div class="cell small-8">
+              <input type="text" class="form-control" placeholder="Promocode">
+            </div>
+            <div class="cell small-4">
+              <button type="submit" class="button">Einlösen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="" style="background-color: #dbdbdb; padding-top: 1rem; padding-bottom: 0.5rem;">
+      <ul class="vertical medium-horizontal menu align-center">
+        <li class="menu-text">&#169;Schnitzeljäger</li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutzerklärung</a></li>
+        <li>Dies ist ein Template mit rein fiktionalen Daten</li>
+      </ul>
+    </footer>
+  </body>
+</html>

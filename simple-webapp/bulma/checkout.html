@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schnitzeljäger - Checkout</title>
+    <link rel="icon" href="assets/sj-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style media="screen">
+    .navbar.is-light .navbar-brand > a.navbar-item:hover {
+    background-color: transparent;
+    color: #999999;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="title">
+          <div class="is-flex is-flex-direction-row is-justify-content-center">
+            <div class="mx-5">
+              <a href="index.html"><img class="is-rounded is-128x128" width="64" src="assets/sj-logo.png"></a>
+            </div>
+            <div class="is-flex is-flex-direction-column is-justify-content-center">
+              <div class="is-flex is-flex-direction-row is-justify-content-center">
+                Checkout
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="columns is-0 is-multiline mb-4">
+      <div class="column is-12 is-hidden-desktop px-5">
+        <div class="card mb-3 mx-5">
+          <header class="card-header">
+            <div class="content px-4 pt-4">
+              <h3>Einkaufswagen</h3>
+            </div>
+          </header>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4">
+
+          </div>
+        </div>
+        <div class="card mb-3 p-4">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Gutscheincode">
+            </div>
+            <div class="control">
+              <a class="button is-info">
+                Einlösen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-7-desktop is-12-touch px-5">
+        <form class="px-5">
+          <div class="content">
+            <h3>Rechnungsadresse</h3>
+            <div class="columns is-multiline">
+              <div class="column is-12-touch is-6-desktop">
+                <div class="field">
+                  <label class="label">Vorname</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Ihr Vorname" required>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-touch is-6-desktop">
+                <div class="field">
+                  <label class="label">Nachname</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Ihr Nachname" required>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12">
+                <div class="field">
+                  <label class="label">E-Mail Adresse</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Ihre E-Mail Adresse" required>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12">
+                <div class="field">
+                  <label class="label">Straße und Hausnummer</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="z.B. Musterstr. 1" required>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12">
+                <div class="field">
+                  <label class="label">Addresszusatz (optional)</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Adresszusatz">
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-touch is-5-desktop">
+                <div class="field">
+                  <label for="country" class="label">Land</label>
+                  <div class="select">
+                    <select class="" id="country" required="">
+                      <option value="">Auswählen...</option>
+                      <option>Deutschland</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-12-touch is-5-desktop">
+                <div class="field">
+                  <label for="state" class="label">Bundesland</label>
+                  <div class="select">
+                    <select class="" id="state" required="">
+                      <option value="">Auswählen...</option>
+                      <option>Bayern</option>
+                      <option>Berlin</option>
+                      <option>Hessen</option>
+                      <option>Sachsen</option>
+                      <option>Sachsen Anhalt</option>
+                      <option>Schleswig Holstein</option>
+                      <option>Und viele mehr...</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-touch is-2-desktop">
+                <div class="field">
+                  <label for="zip" class="label">Postleitzahl</label>
+                  <input type="text" class="input" id="zip" placeholder="" required="">
+                </div>
+              </div>
+              <div class="column is-12">
+                <label class="checkbox" for="same">
+                  <input type="checkbox" id="same" name="same">
+                  Gleiche Rechnungsadresse, wie Lieferadresse
+                </label>
+                <br>
+                <br>
+                <label class="checkbox" for="info">
+                  <input type="checkbox" id="info" name="info">
+                  Informationen für das nächste Mal speichern
+                </label>
+              </div>
+            </div>
+            <h3>Zahlungsart</h3>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="rsvp">
+                Kreditkarte
+              </label>
+              <br>
+              <label class="radio">
+                <input type="radio" name="rsvp">
+                Girokarte
+              </label>
+              <br>
+              <label class="radio">
+                <input type="radio" name="rsvp">
+                PayPal
+              </label>
+            </div>
+            <div class="columns is-multiline my-3">
+              <div class="column is-6-desktop is-12-touch">
+                <div class="field">
+                  <label for="zip" class="label">Name des Karteninhabers</label>
+                  <input type="text" class="input" placeholder="" required="">
+                  <small>So wie auf der Karte</small>
+                </div>
+              </div>
+              <div class="column is-6-desktop is-12-touch">
+                <div class="field">
+                  <label for="zip" class="label">Kreditkartennummer</label>
+                  <input type="text" class="input" placeholder="" required="">
+                </div>
+              </div>
+              <div class="column is-12-touch is-3-desktop">
+                <div class="field">
+                  <label for="zip" class="label">Ablaufdatum</label>
+                  <input type="text" class="input" placeholder="" required="">
+                </div>
+              </div>
+              <div class="column is-12-touch is-3-desktop">
+                <div class="field">
+                  <label for="zip" class="label">CVV</label>
+                  <input type="text" class="input" placeholder="" required="">
+                </div>
+              </div>
+              <div class="column is-12">
+                <button type="button" class="button is-info" style="width:100%;">Fortfahren mit dem Checkout</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="column is-5 is-hidden-touch pr-4">
+        <div class="card mb-3 mx-5">
+          <header class="card-header">
+            <div class="content px-4 pt-4">
+              <h3>Einkaufswagen</h3>
+            </div>
+          </header>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4">
+            <div class="content m-0">
+              <b>Klassisches Schweineschnitzel</b><br>
+              <small>13€ pro Portion</small>
+            </div>
+            <div class="content m-0">
+              <b>3</b>&nbsp;*&nbsp;<i>39€</i>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4 has-background-primary-light">
+            <div class="content m-0">
+              <b>Promo Code</b><br>
+              <small>Schnitzelmeister</small>
+            </div>
+            <div class="content m-0">
+              <b>- 5€</b>
+            </div>
+          </div>
+          <div class="card-header is-justify-content-space-between p-4 has-background-white-ter">
+            <div class="content m-0">
+              <p>Total (EUR)</p>
+            </div>
+            <div class="content m-0">
+              <b>139€</b>
+            </div>
+          </div>
+        </div>
+        <div class="card p-4 mx-5">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Gutscheincode">
+            </div>
+            <div class="control">
+              <a class="button is-info">
+                Einlösen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer has-background-grey-lighter">
+      <div class="content has-text-centered">
+        <p>
+          <strong>&#169;Schnitzeljäger</strong><br class="is-hidden-desktop">
+          &emsp;<a href="">Impressum</a><br class="is-hidden-desktop">
+          &emsp;<a href="">Datenschutzerklärung</a><br class="is-hidden-desktop">
+          &emsp;Dies ist ein Template mit rein fiktionalen Daten
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
