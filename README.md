@@ -11,13 +11,13 @@ Infos zu den einzelnen Szenarien findet sich in einem README.md in den Szenarien
 
 Hier kommen später Links zu den Seiten, welche mit GitHub Sites gepublished werden...
 
-* [Navigation zwischen den Beispielen](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele)
-* [Simple, statische Webseite mit Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bootstrap/)
-* [Simple, statische Webseite mit Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/foundation/)
-* [Simple, statische Webseite mit Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-statische-webseite/bulma/)
-* [Simple Webapp, Bootstrap](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bootstrap/)
-* [Simple Webapp, Foundation](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/foundation/)
-* [Simple Webapp, Bulma](https://altraugsburg.github.io/studienarbeit-css-frameworks-code-beispiele/simple-webapp/bulma/)
+* [Navigation zwischen den Beispielen](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/)
+* [Simple, statische Webseite mit Bootstrap](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-statische-webseite/bootstrap/)
+* [Simple, statische Webseite mit Foundation](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-statische-webseite/foundation/)
+* [Simple, statische Webseite mit Bulma](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-statische-webseite/bulma/)
+* [Simple Webapp, Bootstrap](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-webapp/bootstrap/)
+* [Simple Webapp, Foundation](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-webapp/foundation/)
+* [Simple Webapp, Bulma](https://altraugsburg.github.io/Studienarbeit-CSS-Frameworks/simple-webapp/bulma/)
 
 
 Die Lizenz für die verwendeten Frameworks befindet sich in den Ordner der erstellten Seiten.
