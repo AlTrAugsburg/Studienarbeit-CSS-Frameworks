@@ -22,4 +22,10 @@ Hier kommen später Links zu den Seiten, welche mit GitHub Sites gepublished wer
 
 Die Lizenz für die verwendeten Frameworks befindet sich in den Ordner der erstellten Seiten.
 
+Links zu den Framework Repositories:
+
+* [Bootstrap](https://github.com/twbs/bootstrap)
+* [Bulma](https://github.com/jgthms/bulma)
+* [Foundation](https://github.com/foundation/foundation-sites)
+
 Autor: Albert Traut
