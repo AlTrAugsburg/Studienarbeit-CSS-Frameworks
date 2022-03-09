@@ -29,3 +29,5 @@ Links zu den Framework Repositories:
 * [Foundation](https://github.com/foundation/foundation-sites)
 
 Autor: Albert Traut
+
+Used Beercss for the navigation sites. Cheers :beer:
